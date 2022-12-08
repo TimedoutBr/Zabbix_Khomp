@@ -40,9 +40,9 @@ Dessa forma, o template interpretará a resposta e mostrará o status <b>"up"</b
 <img width="728" alt="Captura de tela 2022-12-08 175804" src="https://user-images.githubusercontent.com/120132737/206566891-0d6f96bb-b619-4bc1-88f0-fd8472bd10c8.png">
 
 
-Siga nossas redes sociais:
 
 # Autores
+Siga nossas redes sociais:
 
 | [<img src="https://avatars.githubusercontent.com/u/120132737?v=4" width=115><br><sub>TimedoutBr(GitHub)</sub>](https://github.com/TimedoutBr) | [<img src="https://avatars.githubusercontent.com/u/120132737?v=4" width=115><br><sub>@timedout.br (Instagram)</sub>](https://www.instagram.com/timedout.br/) |  [<img src="https://media-exp1.licdn.com/dms/image/C5603AQHJIJwnDoB59g/profile-displayphoto-shrink_400_400/0/1517232864658?e=1675900800&v=beta&t=q4-0_HHTwoai450ehOCIZgsM9VhrzGni23coIk0GjDM" width=115><br><sub>Vinicius J Tavares</sub>](https://www.linkedin.com/in/vinicius-jose-tavares/) 
 | :---: | :---: | :---: |
