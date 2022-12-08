@@ -2,9 +2,11 @@
 
 Template e configração do servidor para monitorar o status do link E1 utilizando equipamentos Khomp.
 
+
+
 <h2> Importando template Zabbix Server </h2>
 
-Importe a template <h3>zbx_templates_Khomp</h3>
+Importe a template <b>zbx_templates_Khomp</b>
 
 
 Inicialmente você precisa dar permissão para o Zabbix realizar consultas no asterisk como root.
