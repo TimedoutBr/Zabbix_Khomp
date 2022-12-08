@@ -7,6 +7,8 @@ Template e configração do servidor para monitorar o status do link E1 utilizan
 <h2> Importando template Zabbix Server </h2>
 
 Importe a template  <b>zbx_templates_Khomp.xml</b> através do Menu <b>Configurações > Templates > Import </b>
+
+
 <img src="https://monops.cloud/wp-content/uploads/2021/05/PASSO-5-Importar-Templates-no-Zabbix.png">
 
 
@@ -25,6 +27,13 @@ UserParameter=khomp.link[*],sudo asterisk -rx 'khomp links show concise'|grep "B
 
 ```
 
+Basicamente este comando recebe uma variável <b>"0"</b> ou <b>"1"</b> referente ao link que desejamos receber o <b>status</b>, faz uma consulta filtrando o recebimento da resposta <b>"OK"</b>.
+Caso o resultado da consulta no Asterisk seja "OK", retornará ao Zabbix o valor <b>"1"</b>, senão retornará <b>"0"</b>.
+
+Dessa forma, o template interpretará a resposta e mostrará o status <b>"up"</b> ou <b>"down"</b>
+
+
+<img src="https://drive.google.com/file/d/1Tj8LxHTvtBHq3lrD_EMF6u2rTcl7VRXY/view?usp=sharing">
 
 
 
