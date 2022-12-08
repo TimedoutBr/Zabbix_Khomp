@@ -6,7 +6,8 @@ Template e configração do servidor para monitorar o status do link E1 utilizan
 
 <h2> Importando template Zabbix Server </h2>
 
-Importe a template <b>zbx_templates_Khomp</b>
+Importe a template  <b>zbx_templates_Khomp.xml</b> através do Menu <b>Configurações > Templates > Import </b>
+!(https://monops.cloud/wp-content/uploads/2021/05/PASSO-5-Importar-Templates-no-Zabbix.png)
 
 
 Inicialmente você precisa dar permissão para o Zabbix realizar consultas no asterisk como root.
