@@ -1,6 +1,6 @@
 <h1 align="center"> Zabbix_Khomp </h1>
 
-Template e configração do servidor para monitorar o status do link E1 utilizando equipamentos Khomp.
+Template e configuração do servidor para monitorar o status do link E1 utilizando equipamentos Khomp.
 
 
 
