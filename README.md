@@ -12,6 +12,10 @@ Importe a template  <b>zbx_templates_Khomp.xml</b> através do Menu <b>Configura
 <img src="https://monops.cloud/wp-content/uploads/2021/05/PASSO-5-Importar-Templates-no-Zabbix.png">
 
 
+
+<h2> Configurando Zabbix_agent </h2>
+
+
 Inicialmente você precisa dar permissão para o Zabbix realizar consultas no asterisk como root.
 Para isso, adicione as linhas abaixo no arquivo ```/etc/sudoers ``` :
 
@@ -33,7 +37,9 @@ Caso o resultado da consulta no Asterisk seja "OK", retornará ao Zabbix o valor
 Dessa forma, o template interpretará a resposta e mostrará o status <b>"up"</b> ou <b>"down"</b>
 
 
-<img src="https://drive.google.com/file/d/1Tj8LxHTvtBHq3lrD_EMF6u2rTcl7VRXY/view?usp=sharing">
+
+<img width="728" alt="Captura de tela 2022-12-08 175804" src="https://user-images.githubusercontent.com/120132737/206566891-0d6f96bb-b619-4bc1-88f0-fd8472bd10c8.png">
+
 
 
 
