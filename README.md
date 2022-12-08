@@ -3,13 +3,13 @@
 Template e configração do servidor para monitorar o status do link E1 utilizando equipamentos Khomp.
 
 Inicialmente você precisa dar permissão para o Zabbix realizar consultas no asterisk como root.
-Para isso, adicione as linhas abaixo no arquivo ```shell /etc/sudoers ``` :
+Para isso, adicione as linhas abaixo no arquivo ```/etc/sudoers ``` :
 
 ```
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/rasterisk
 zabbix ALL=(ALL) NOPASSWD: /usr/sbin/asterisk
 ```
-Agora, tendo permissão de root, adicione as linhas abaixo no arquivo de configuração do zabbix ```shell /etc/zabbiz/zabbiz_agentd.conf  ```:
+Agora, tendo permissão de root, adicione as linhas abaixo no arquivo de configuração do zabbix ```/etc/zabbiz/zabbiz_agentd.conf  ```:
 
 ```
 UserParameter=khomp.link[*],sudo asterisk -rx 'khomp links show concise'|grep "B00L0$1"|cut -c 11- |grep "Ok" | wc -l
