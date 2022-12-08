@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-------TimedoutBr----->
 <zabbix_export>
     <version>5.0</version>
     <date>2022-12-08T18:17:10Z</date>
@@ -86,6 +87,7 @@
             </items>
         </template>
     </templates>
+    <!-------TimedoutBr----->
     <value_maps>
         <value_map>
             <name>KHOMP - LINK STATUS</name>
@@ -102,3 +104,4 @@
         </value_map>
     </value_maps>
 </zabbix_export>
+<!-------TimedoutBr----->
