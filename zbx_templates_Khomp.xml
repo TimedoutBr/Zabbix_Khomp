@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2022-12-08T18:17:10Z</date>
+    <groups>
+        <group>
+            <name>KHOMP</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>khomp link</template>
+            <name>khomp link</name>
+            <description>status link E1</description>
+            <groups>
+                <group>
+                    <name>KHOMP</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>..E1 Link Status</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Link 0</name>
+                    <key>khomp.link[0]</key>
+                    <delay>1m;1m/1-7,08:00-24:00;5m/1-7,00:01-07:59</delay>
+                    <history>60d</history>
+                    <description>Status Link00</description>
+                    <applications>
+                        <application>
+                            <name>..E1 Link Status</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>KHOMP - LINK STATUS</name>
+                    </valuemap>
+                    <triggers>
+                        <trigger>
+                            <expression>{diff()}&gt;0 and {max(#5)}&gt;5m</expression>
+                            <name>Link0.down</name>
+                            <priority>HIGH</priority>
+                            <description>Link 0 status</description>
+                        </trigger>
+                        <trigger>
+                            <expression>{diff()}&gt;0 and {max(3)}&gt;3m</expression>
+                            <name>Link0.Error</name>
+                            <priority>WARNING</priority>
+                            <description>Link 0 status</description>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <name>Link 1</name>
+                    <key>khomp.link[1]</key>
+                    <delay>1m;1m/1-7,08:00-24:00;5m/1-7,00:01-07:59</delay>
+                    <history>60d</history>
+                    <description>Status Link01</description>
+                    <applications>
+                        <application>
+                            <name>..E1 Link Status</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>KHOMP - LINK STATUS</name>
+                    </valuemap>
+                    <triggers>
+                        <trigger>
+                            <expression>{diff()}&gt;0 and {max(#5)}&gt;5m</expression>
+                            <name>Link1.down</name>
+                            <priority>HIGH</priority>
+                            <description>Link 1 status</description>
+                        </trigger>
+                        <trigger>
+                            <expression>{diff()}&gt;0 and {max(#3)}&gt;3m</expression>
+                            <name>Link1.Error</name>
+                            <priority>WARNING</priority>
+                            <description>Link 1 status</description>
+                            <manual_close>YES</manual_close>
+                        </trigger>
+                    </triggers>
+                </item>
+            </items>
+        </template>
+    </templates>
+    <value_maps>
+        <value_map>
+            <name>KHOMP - LINK STATUS</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>DOWN/ERROR</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>UP</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
